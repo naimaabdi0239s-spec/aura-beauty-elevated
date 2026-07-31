@@ -9,17 +9,17 @@ const details = [
 export function Contact() {
   return (
     <section id="contact" className="border-t border-border">
-      <div className="mx-auto max-w-[1560px] px-6 py-24 md:px-12 md:py-36">
-        <div className="grid gap-16 lg:grid-cols-[1fr_1.1fr] lg:gap-24">
+      <div className="mx-auto max-w-[1560px] px-6 py-16 md:px-12 md:py-24">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
           <div>
             <Reveal>
               <p className="eyebrow">Visit Aura</p>
-              <h2 className="mt-7 font-display text-4xl md:text-[3.4rem]">Come and see us</h2>
+              <h2 className="mt-6 font-display text-4xl md:text-[3.4rem]">Come and see us</h2>
             </Reveal>
 
-            <div className="mt-12">
+            <div className="mt-10">
               {details.map((d, i) => (
-                <Reveal key={d.label} delay={i * 120} className="grid gap-3 border-t border-border py-7 sm:grid-cols-[140px_1fr]">
+                <Reveal key={d.label} delay={i * 120} className="grid gap-3 border-t border-border py-5 sm:grid-cols-[140px_1fr]">
                   <span className="rule-label text-taupe">{d.label}</span>
                   <div className="space-y-1.5 text-sm leading-relaxed">
                     {d.lines.map((l) => (
@@ -28,7 +28,7 @@ export function Contact() {
                   </div>
                 </Reveal>
               ))}
-              <Reveal delay={360} className="grid gap-3 border-y border-border py-7 sm:grid-cols-[140px_1fr]">
+              <Reveal delay={360} className="grid gap-3 border-y border-border py-5 sm:grid-cols-[140px_1fr]">
                 <span className="rule-label text-taupe">Follow</span>
                 <div className="flex flex-wrap gap-6">
                   {["Instagram", "WhatsApp", "Email"].map((s) => (
@@ -41,14 +41,14 @@ export function Contact() {
             </div>
 
             <Reveal delay={420}>
-              <a href="#contact" className="btn-base btn-solid mt-12">
+              <a href="#contact" className="btn-base btn-solid mt-10">
                 Book an Appointment
               </a>
             </Reveal>
           </div>
 
           <Reveal delay={160}>
-            <div className="relative flex h-full min-h-[380px] items-center justify-center overflow-hidden bg-secondary">
+            <div className="relative flex h-full min-h-[340px] items-center justify-center overflow-hidden bg-secondary">
               <div
                 aria-hidden="true"
                 className="absolute inset-0 opacity-[0.5]"
@@ -74,3 +74,4 @@ export function Contact() {
     </section>
   );
 }
+
