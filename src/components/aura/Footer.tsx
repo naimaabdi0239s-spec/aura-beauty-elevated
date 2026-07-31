@@ -1,56 +1,114 @@
 export function Footer() {
   return (
     <footer className="bg-espresso text-ivory overflow-hidden">
-      {/* Oversized wordmark */}
+      {/* Editorial footer header */}
       <div className="border-b border-ivory/10 px-6 py-16 md:px-12 md:py-20">
         <div className="mx-auto max-w-[1560px]">
-       <div className="border-b border-ivory/10 px-6 py-16 md:px-12 md:py-20">
-  <div className="mx-auto max-w-[1560px] flex flex-col lg:flex-row justify-between items-start gap-20">
+          <div className="grid gap-16 lg:grid-cols-[1.1fr_2fr] lg:items-end">
+            
+            {/* Oversized wordmark */}
+            <div>
+              <p
+                className="font-display leading-none text-ivory/90 select-none"
+                style={{
+                  fontSize: "clamp(4rem, 15vw, 15rem)",
+                  letterSpacing: "-0.06em",
+                }}
+              >
+                AURA
+              </p>
+            </div>
 
-    <p
-      className="font-display leading-none text-ivory/90 shrink-0"
-      style={{
-        fontSize: "clamp(4rem,18vw,18rem)",
-        letterSpacing: "-0.04em",
-      }}
-    >
-      AURA
-    </p>
+            {/* Footer navigation */}
+            <div className="grid grid-cols-2 gap-x-10 gap-y-12 md:grid-cols-4">
+              
+              {/* Location */}
+              <div>
+                <p className="rule-label mb-4 text-ivory/30">
+                  Location
+                </p>
+                <p className="text-sm leading-relaxed text-ivory/60">
+                  Dubai,
+                  <br />
+                  United Arab Emirates
+                </p>
+              </div>
 
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-12 flex-1">
+              {/* Explore */}
+              <div>
+                <p className="rule-label mb-4 text-ivory/30">
+                  Explore
+                </p>
 
-      <div>
-        <p className="rule-label text-ivory/30 mb-4">Location</p>
-        <p className="text-sm text-ivory/60">
-          Dubai<br />
-          United Arab Emirates
-        </p>
-      </div>
+                <ul className="space-y-3 text-sm text-ivory/70">
+                  {[
+                    ["Treatments", "#treatments"],
+                    ["About", "#about"],
+                    ["Results", "#results"],
+                    ["Contact", "#contact"],
+                  ].map(([label, href]) => (
+                    <li key={label}>
+                      <a
+                        href={href}
+                        className="link-underline transition-colors duration-500 hover:text-ivory"
+                      >
+                        {label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-      <div>
-        <p className="rule-label text-ivory/30 mb-4">Explore</p>
-        ...
-      </div>
+              {/* Social */}
+              <div>
+                <p className="rule-label mb-4 text-ivory/30">
+                  Social
+                </p>
 
-      <div>
-        <p className="rule-label text-ivory/30 mb-4">Social</p>
-        ...
-      </div>
+                <ul className="space-y-3 text-sm text-ivory/70">
+                  {["Instagram", "TikTok"].map((social) => (
+                    <li key={social}>
+                      <a
+                        href="#contact"
+                        className="link-underline transition-colors duration-500 hover:text-ivory"
+                      >
+                        {social}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-      <div>
-        <p className="rule-label text-ivory/30 mb-4">Legal</p>
-        ...
-      </div>
+              {/* Legal */}
+              <div>
+                <p className="rule-label mb-4 text-ivory/30">
+                  Legal
+                </p>
 
-    </div>
+                <ul className="space-y-3 text-sm text-ivory/70">
+                  {["Privacy Policy", "Terms & Conditions"].map((item) => (
+                    <li key={item}>
+                      <a
+                        href="#contact"
+                        className="link-underline transition-colors duration-500 hover:text-ivory"
+                      >
+                        {item}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-  </div>
-</div>
-
-        {/* Closing line */}
-        <div className="mt-12 flex flex-wrap items-end gap-6 border-t border-ivory/10 pt-6">
-          <p className="text-xs tracking-widest text-ivory/30 uppercase">© 2026 Aura Aesthetics. All rights reserved.</p>
+            </div>
+          </div>
         </div>
+      </div>
+
+      {/* Copyright */}
+      <div className="mx-auto max-w-[1560px] px-6 py-6 md:px-12">
+        <p className="text-xs uppercase tracking-widest text-ivory/30">
+          © 2026 Aura Aesthetics. All rights reserved.
+        </p>
       </div>
     </footer>
   );
