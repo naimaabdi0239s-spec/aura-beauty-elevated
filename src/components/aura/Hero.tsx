@@ -50,14 +50,6 @@ export function Hero() {
             </a>
           </div>
         </div>
-
-        <div
-          className="mt-16 hidden items-end justify-between border-t border-ivory/20 pt-6 md:flex animate-[fade-in_1.6s_cubic-bezier(0.16,1,0.3,1)_both]"
-          style={{ animationDelay: "700ms" }}
-        >
-          <span className="rule-label text-ivory/60">Dubai, United Arab Emirates</span>
-          <span className="rule-label text-ivory/60">Beauty, with intention</span>
-        </div>
       </div>
     </section>
   );
