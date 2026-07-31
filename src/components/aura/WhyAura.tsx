@@ -21,11 +21,11 @@ const values = [
 export function WhyAura() {
   return (
     <section className="bg-secondary">
-      <div className="mx-auto max-w-[1560px] px-6 py-24 md:px-12 md:py-36">
-        <div className="grid gap-14 lg:grid-cols-[0.9fr_1.6fr] lg:gap-24">
+      <div className="mx-auto max-w-[1560px] px-6 py-16 md:px-12 md:py-24">
+        <div className="grid gap-10 lg:grid-cols-[0.9fr_1.6fr] lg:gap-20">
           <Reveal>
             <p className="eyebrow">Why Aura</p>
-            <h2 className="mt-7 font-display text-4xl md:text-[3.4rem]">
+            <h2 className="mt-6 font-display text-4xl md:text-[3.4rem]">
               A more personal <span className="italic">approach</span>
             </h2>
           </Reveal>
@@ -35,7 +35,7 @@ export function WhyAura() {
               <Reveal
                 key={v.n}
                 delay={i * 140}
-                className="group grid grid-cols-1 gap-4 border-t border-border py-9 last:border-b sm:grid-cols-[auto_1fr_1.4fr] sm:items-start sm:gap-10"
+                className="group grid grid-cols-1 gap-4 border-t border-border py-7 last:border-b sm:grid-cols-[auto_1fr_1.4fr] sm:items-start sm:gap-10"
               >
                 <span className="rule-label text-taupe transition-colors duration-500 group-hover:text-clay">{v.n}</span>
                 <h3 className="font-display text-2xl md:text-[2rem]">{v.title}</h3>
