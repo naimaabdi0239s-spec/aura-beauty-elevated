@@ -5,9 +5,9 @@ import { Reveal } from "./Reveal";
 export function Treatments() {
   return (
     <section id="treatments" className="border-t border-border">
-      <div className="mx-auto max-w-[1560px] px-6 py-32 md:px-12 md:py-44">
+      <div className="mx-auto max-w-[1560px] px-6 py-20 md:px-12 md:py-28">
         <Reveal>
-          <div className="flex flex-wrap items-end justify-between gap-6 pb-16">
+          <div className="flex flex-wrap items-end justify-between gap-6 pb-10">
             <h2 className="max-w-xl font-display text-5xl md:text-7xl leading-[0.9]">Treatments,<br /><span className="italic">considered</span></h2>
             <p className="eyebrow">Three Pillars of Care</p>
           </div>
@@ -26,7 +26,7 @@ export function Treatments() {
                 className="aspect-[4/3] w-full object-cover transition-transform duration-[1400ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.03]"
               />
             </div>
-            <div className="flex flex-col justify-center px-0 py-12 lg:px-16 lg:py-16">
+            <div className="flex flex-col justify-center px-0 py-10 lg:px-16 lg:py-12">
               <div className="flex items-baseline gap-4 mb-6">
                 <span className="rule-label text-taupe">01</span>
                 <h3 className="font-display text-5xl md:text-6xl">Injectables</h3>
@@ -52,7 +52,7 @@ export function Treatments() {
         {/* Row 2: Skin Treatments — reversed layout with tall image */}
         <Reveal delay={80}>
           <article className="group grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] border-t border-border mt-0">
-            <div className="flex flex-col justify-center px-0 py-12 lg:pr-16 lg:py-16 order-2 lg:order-1">
+            <div className="flex flex-col justify-center px-0 py-10 lg:pr-16 lg:py-12 order-2 lg:order-1">
               <div className="flex items-baseline gap-4 mb-6">
                 <span className="rule-label text-taupe">02</span>
                 <h3 className="font-display text-5xl md:text-6xl">Skin<br />Treatments</h3>
@@ -90,7 +90,7 @@ export function Treatments() {
           <article className="group grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] border-t border-border mt-0">
             <div className="overflow-hidden">
               <img
-                src="/WhatsApp_Image_2026-07-31_at_5.51.47_PM.jpeg"
+                src="https://images.pexels.com/photos/7581078/pexels-photo-7581078.jpeg?auto=compress&cs=tinysrgb&w=1200"
                 alt="Practitioner performing a signature facial treatment"
                 loading="lazy"
                 width={912}
@@ -98,7 +98,7 @@ export function Treatments() {
                 className="aspect-[4/3] w-full object-cover object-top transition-transform duration-[1400ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.03]"
               />
             </div>
-            <div className="flex flex-col justify-center px-0 py-12 lg:px-16 lg:py-16">
+            <div className="flex flex-col justify-center px-0 py-10 lg:px-16 lg:py-12">
               <div className="flex items-baseline gap-4 mb-6">
                 <span className="rule-label text-taupe">03</span>
                 <h3 className="font-display text-5xl md:text-6xl">Facials<br />&amp; Glow</h3>
