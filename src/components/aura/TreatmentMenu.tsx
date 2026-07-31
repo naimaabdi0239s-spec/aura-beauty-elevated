@@ -45,13 +45,13 @@ export function TreatmentMenu() {
 
   return (
     <section id="menu" className="bg-secondary">
-      <div className="mx-auto max-w-[1200px] px-6 py-24 md:px-12 md:py-36">
+      <div className="mx-auto max-w-[1200px] px-6 py-16 md:px-12 md:py-24">
         <Reveal>
           <p className="eyebrow">The Menu</p>
-          <h2 className="mt-7 max-w-xl font-display text-4xl md:text-[3.4rem]">Our most loved treatments</h2>
+          <h2 className="mt-6 max-w-xl font-display text-4xl md:text-[3.4rem]">Our most loved treatments</h2>
         </Reveal>
 
-        <div className="mt-14 border-t border-border">
+        <div className="mt-10 border-t border-border">
           {treatments.map((t, i) => {
             const isOpen = open === i;
             return (
@@ -60,7 +60,7 @@ export function TreatmentMenu() {
                   type="button"
                   onClick={() => setOpen(isOpen ? null : i)}
                   aria-expanded={isOpen}
-                  className="group flex w-full items-center justify-between gap-6 py-7 text-left"
+                  className="group flex w-full items-center justify-between gap-6 py-6 text-left"
                 >
                   <span className="flex min-w-0 items-baseline gap-6">
                     <span className="rule-label shrink-0 text-taupe">{String(i + 1).padStart(2, "0")}</span>
@@ -84,7 +84,7 @@ export function TreatmentMenu() {
                   }`}
                 >
                   <div className="min-h-0">
-                    <div className="grid gap-8 pb-10 sm:grid-cols-[1.6fr_1fr_1fr] sm:items-start md:pl-[4.5rem]">
+                    <div className="grid gap-8 pb-8 sm:grid-cols-[1.6fr_1fr_1fr] sm:items-start md:pl-[4.5rem]">
                       <p className="max-w-md text-sm leading-[1.9] text-muted-foreground">{t.description}</p>
                       <div>
                         <p className="rule-label text-taupe">Duration</p>
@@ -106,7 +106,7 @@ export function TreatmentMenu() {
         </div>
 
         <Reveal delay={120}>
-          <a href="#contact" className="btn-base btn-outline mt-14">
+          <a href="#contact" className="btn-base btn-outline mt-10">
             View All Treatments
           </a>
         </Reveal>
