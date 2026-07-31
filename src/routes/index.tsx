@@ -19,8 +19,8 @@ const title = "Aura Aesthetics — Modern Aesthetics & Skin Clinic, Dubai";
 const description =
   "Personalized aesthetics and advanced skincare in Dubai. Injectables, skin treatments and signature facials designed to enhance your natural beauty.";
 
-export const Route = createFileRoute("/")({{
-  head: () => ({{
+export const Route = createFileRoute("/")({
+  head: () => ({
     meta: [
       { title },
       { name: "description", content: description },
@@ -29,7 +29,7 @@ export const Route = createFileRoute("/")({{
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-  }}),
+  }),
   component: Index,
 });
 
