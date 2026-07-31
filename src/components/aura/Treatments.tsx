@@ -39,14 +39,49 @@ export function Treatments() {
               <p className="text-sm leading-[1.9] text-muted-foreground max-w-sm">
                 Subtle, refined enhancements designed to restore balance and highlight your natural features.
               </p>
-              <ul className="mt-8 space-y-4">
-                {["Anti-Wrinkle Treatments", "Lip Enhancement", "Facial Balancing"].map((item) => (
-                  <li key={item} className="flex items-center gap-4 border-b border-border/70 pb-4 text-[0.8rem] tracking-wide">
-                    <span className="h-px w-5 bg-taupe shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              <div className="mt-12 space-y-8">
+
+  <div className="grid grid-cols-[120px_1fr] gap-6 items-center border-b border-border pb-8">
+    <img
+      src={lips}
+      alt="Lip Enhancement"
+      className="h-28 w-28 rounded-sm object-cover"
+    />
+
+    <div>
+      <h4 className="font-display text-2xl">Lip Enhancement</h4>
+      <p className="mt-2 text-sm leading-7 text-muted-foreground">
+        Soft volume and refined definition tailored to your natural proportions.
+      </p>
+    </div>
+  </div>
+
+  <div className="grid grid-cols-[120px_1fr] gap-6 items-center border-b border-border pb-8">
+    <img
+      src={facialBalancing}
+      alt="Facial Balancing"
+      className="h-28 w-28 rounded-sm object-cover"
+    />
+
+    <div>
+      <h4 className="font-display text-2xl">Facial Balancing</h4>
+      <p className="mt-2 text-sm leading-7 text-muted-foreground">
+        Strategic enhancements designed to create harmony from every angle.
+      </p>
+    </div>
+  </div>
+
+  <div className="flex items-center justify-between pt-2">
+    <h4 className="font-display text-2xl">
+      Anti-Wrinkle Treatments
+    </h4>
+
+    <span className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
+      Prevent • Smooth • Refresh
+    </span>
+  </div>
+
+</div>
               <a href="#menu" className="link-underline mt-10 self-start rule-label text-foreground">
                 Explore Injectables
               </a>
@@ -65,14 +100,35 @@ export function Treatments() {
               <p className="text-sm leading-[1.9] text-muted-foreground max-w-sm">
                 Advanced protocols designed to transform texture, tone and clarity from within.
               </p>
-              <ul className="mt-8 space-y-4">
-                {["Microneedling", "Chemical Peels", "Skin Resurfacing"].map((item) => (
-                  <li key={item} className="flex items-center gap-4 border-b border-border/70 pb-4 text-[0.8rem] tracking-wide">
-                    <span className="h-px w-5 bg-taupe shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
+            <div className="mt-12">
+
+  <img
+    src={microneedling}
+    alt="Microneedling"
+    className="mb-6 aspect-[16/10] w-full object-cover"
+  />
+
+  <h4 className="font-display text-3xl">
+    Microneedling
+  </h4>
+
+  <p className="mt-3 max-w-md text-sm leading-7 text-muted-foreground">
+    Stimulates collagen production while improving texture, tone and overall skin quality.
+  </p>
+
+  <div className="mt-10 flex flex-wrap gap-4">
+
+    <span className="border border-border px-5 py-2 text-xs uppercase tracking-[0.25em]">
+      Chemical Peels
+    </span>
+
+    <span className="border border-border px-5 py-2 text-xs uppercase tracking-[0.25em]">
+      Skin Resurfacing
+    </span>
+
+  </div>
+
+</div>
               <a href="#menu" className="link-underline mt-10 self-start rule-label text-foreground">
                 Explore Skin Treatments
               </a>
@@ -111,14 +167,27 @@ export function Treatments() {
               <p className="text-sm leading-[1.9] text-muted-foreground max-w-sm">
                 Signature treatments crafted to cleanse, nourish and reveal your healthiest, most luminous glow.
               </p>
-              <ul className="mt-8 space-y-4">
-                {["Signature Facial", "Glass Skin Facial", "Deep Cleansing Treatments"].map((item) => (
-                  <li key={item} className="flex items-center gap-4 border-b border-border/70 pb-4 text-[0.8rem] tracking-wide">
-                    <span className="h-px w-5 bg-taupe shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              <div className="mt-12 space-y-8">
+
+  <div className="border-b border-border pb-6">
+    <h4 className="font-display text-2xl">
+      Signature Facial
+    </h4>
+  </div>
+
+  <div className="border-b border-border pb-6">
+    <h4 className="font-display text-2xl">
+      Glass Skin Facial
+    </h4>
+  </div>
+
+  <div className="border-b border-border pb-6">
+    <h4 className="font-display text-2xl">
+      Deep Cleansing Treatment
+    </h4>
+  </div>
+
+</div>
               <a href="#menu" className="link-underline mt-10 self-start rule-label text-foreground">
                 Explore Facials
               </a>
