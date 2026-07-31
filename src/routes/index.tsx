@@ -43,7 +43,6 @@ function Index() {
         <Editorial />
         <WhyAura />
         <Featured />
-        <Results />
         <TreatmentMenu />
         <Testimonials />
         <About />
