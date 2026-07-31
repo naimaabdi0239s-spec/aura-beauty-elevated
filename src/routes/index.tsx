@@ -4,6 +4,7 @@ import { Nav } from "@/components/aura/Nav";
 import { Hero } from "@/components/aura/Hero";
 import { Intro } from "@/components/aura/Intro";
 import { Treatments } from "@/components/aura/Treatments";
+import { Editorial } from "@/components/aura/Editorial";
 import { WhyAura } from "@/components/aura/WhyAura";
 import { Featured } from "@/components/aura/Featured";
 import { Results } from "@/components/aura/Results";
@@ -18,8 +19,8 @@ const title = "Aura Aesthetics — Modern Aesthetics & Skin Clinic, Dubai";
 const description =
   "Personalized aesthetics and advanced skincare in Dubai. Injectables, skin treatments and signature facials designed to enhance your natural beauty.";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
+export const Route = createFileRoute("/")({{
+  head: () => ({{
     meta: [
       { title },
       { name: "description", content: description },
@@ -28,7 +29,7 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-  }),
+  }}),
   component: Index,
 });
 
@@ -40,6 +41,7 @@ function Index() {
         <Hero />
         <Intro />
         <Treatments />
+        <Editorial />
         <WhyAura />
         <Featured />
         <Results />

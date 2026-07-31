@@ -1,4 +1,3 @@
-import featured from "@/assets/featured-glow.jpg";
 import { Reveal } from "./Reveal";
 
 const details = ["Deep cleansing", "Skin renewal", "Intense hydration", "Signature finishing ritual"];
@@ -8,12 +7,12 @@ export function Featured() {
     <section className="grid grid-cols-1 lg:grid-cols-2">
       <div className="relative min-h-[60vh] overflow-hidden lg:min-h-[92vh]">
         <img
-          src={featured}
-          alt="Editorial close-up of luminous, glass-like skin after a facial treatment"
+          src="/WhatsApp_Image_2026-07-31_at_5.51.47_PM.jpeg"
+          alt="Practitioner performing a signature Aura facial treatment"
           loading="lazy"
           width={1200}
           height={1504}
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover object-top"
         />
       </div>
 
