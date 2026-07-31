@@ -1,5 +1,10 @@
 import injectables from "@/assets/cat-injectables.jpg";
 import skin from "@/assets/cat-skin.jpg";
+
+import facials from "@/assets/pexels-cottonbro-7581078.jpg";
+import lips from "@/assets/2.jpeg";
+import microneedling from "@/assets/WhatsApp Image 2026-07-31 at 5.51.47 PM.jpeg";
+import facialBalancing from "@/assets/33.jpeg";
 import { Reveal } from "./Reveal";
 
 export function Treatments() {
