@@ -1,7 +1,7 @@
 import { Reveal } from "./Reveal";
 
 const dominantResult = {
-  image: "/pexels-cottonbro-7581078.jpg",
+  image: "https://images.pexels.com/photos/7581078/pexels-photo-7581078.jpeg?auto=compress&cs=tinysrgb&w=1400",
   category: "Injectables",
   title: "Lip Enhancement",
   note: "Natural volume, beautifully defined",
@@ -28,11 +28,11 @@ const supportingResults = [
 export function Results() {
   return (
     <section id="results" className="border-t border-border">
-      <div className="mx-auto max-w-[1560px] px-6 py-32 md:px-12 md:py-44">
-        <div className="grid gap-8 lg:grid-cols-[1.2fr_1fr] lg:items-end mb-20">
+      <div className="mx-auto max-w-[1560px] px-6 py-20 md:px-12 md:py-28">
+        <div className="grid gap-8 lg:grid-cols-[1.2fr_1fr] lg:items-end mb-12">
           <Reveal>
             <p className="eyebrow">The Results</p>
-            <h2 className="mt-7 font-display text-5xl md:text-[3.8rem] leading-[0.92]">
+            <h2 className="mt-6 font-display text-5xl md:text-[3.8rem] leading-[0.92]">
               Real results.<br /><span className="italic">Real confidence.</span>
             </h2>
           </Reveal>
@@ -57,7 +57,7 @@ export function Results() {
                 style={{ maxHeight: "72vh" }}
               />
             </div>
-            <figcaption className="mt-6 flex flex-wrap items-baseline justify-between gap-4 border-t border-border pt-5">
+            <figcaption className="mt-5 flex flex-wrap items-baseline justify-between gap-4 border-t border-border pt-4">
               <div>
                 <h3 className="font-display text-2xl">{dominantResult.title}</h3>
                 <p className="mt-1 text-xs text-muted-foreground">{dominantResult.note}</p>
@@ -82,7 +82,7 @@ export function Results() {
                     className="aspect-[5/4] w-full object-cover object-center"
                   />
                 </div>
-                <figcaption className="mt-5 flex items-baseline justify-between gap-4 border-t border-border pt-4">
+                <figcaption className="mt-4 flex items-baseline justify-between gap-4 border-t border-border pt-3">
                   <div>
                     <h3 className="font-display text-xl">{r.title}</h3>
                     <p className="mt-1 text-xs text-muted-foreground">{r.note}</p>
