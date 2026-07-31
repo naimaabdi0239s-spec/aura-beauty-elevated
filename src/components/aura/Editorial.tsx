@@ -3,9 +3,9 @@ import { Reveal } from "./Reveal";
 export function Editorial() {
   return (
     <section className="overflow-hidden bg-espresso">
-      <div className="mx-auto max-w-[1560px] px-6 py-32 md:px-12 md:py-52">
+      <div className="mx-auto max-w-[1560px] px-6 py-20 md:px-12 md:py-28">
         <Reveal>
-          <p className="eyebrow !text-ivory/45 mb-10">The Aura Philosophy</p>
+          <p className="eyebrow !text-ivory/45 mb-8">The Aura Philosophy</p>
         </Reveal>
         <Reveal delay={80}>
           <h2
@@ -17,7 +17,7 @@ export function Editorial() {
           </h2>
         </Reveal>
         <Reveal delay={200}>
-          <div className="mt-16 md:mt-20 grid grid-cols-1 md:grid-cols-[1fr_auto] items-end gap-12">
+          <div className="mt-10 md:mt-12 grid grid-cols-1 md:grid-cols-[1fr_auto] items-end gap-8">
             <p className="max-w-lg text-[1.05rem] leading-[1.95] text-ivory/65 font-light">
               We believe the most beautiful results are the ones no one can quite explain.
               A certain glow. A quiet confidence. Features that look rested, refined, and entirely yours.
@@ -34,3 +34,4 @@ export function Editorial() {
     </section>
   );
 }
+
