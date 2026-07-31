@@ -7,7 +7,6 @@ import { Treatments } from "@/components/aura/Treatments";
 import { Editorial } from "@/components/aura/Editorial";
 import { WhyAura } from "@/components/aura/WhyAura";
 import { Featured } from "@/components/aura/Featured";
-import { Results } from "@/components/aura/Results";
 import { TreatmentMenu } from "@/components/aura/TreatmentMenu";
 import { Testimonials } from "@/components/aura/Testimonials";
 import { About } from "@/components/aura/About";
