@@ -95,12 +95,12 @@ export function Treatments() {
           <article className="group grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] border-t border-border mt-0">
             <div className="overflow-hidden">
               <img
-                src="https://images.pexels.com/photos/7581078/pexels-photo-7581078.jpeg?auto=compress&cs=tinysrgb&w=1200"
+               src={facials}
                 alt="Practitioner performing a signature facial treatment"
                 loading="lazy"
                 width={912}
                 height={760}
-                className="aspect-[4/3] w-full object-cover object-top transition-transform duration-[1400ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.03]"
+              className="aspect-[4/3] w-full object-contain bg-[#f8f5f2] transition-transform duration-[1400ms] ease-[cubic-bezier(0.16,1,0.3,1)]"
               />
             </div>
             <div className="flex flex-col justify-center px-0 py-10 lg:px-16 lg:py-12">
