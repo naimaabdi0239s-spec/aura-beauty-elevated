@@ -1,3 +1,4 @@
+import featuredImage from "@/assets/pexels-youssef-labib-92809001-9157201.jpg";
 import { Reveal } from "./Reveal";
 
 const details = ["Deep cleansing", "Skin renewal", "Intense hydration", "Signature finishing ritual"];
@@ -7,7 +8,7 @@ export function Featured() {
     <section className="grid grid-cols-1 lg:grid-cols-2">
       <div className="relative min-h-[60vh] overflow-hidden lg:min-h-[80vh]">
         <img
-          src="https://images.pexels.com/photos/9157201/pexels-photo-9157201.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          src={featuredImage}
           alt="Practitioner performing a signature Aura facial treatment"
           loading="lazy"
           width={1200}
